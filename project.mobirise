@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Dextools",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#0b1217"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/dextools_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://dext-tools.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://dext-tools.github.io/sitemap.xml\n\n",
+    "mbrsiteDomain": "mefvwlhgku",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://dextool.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/dextools.png\" alt=\"dextools\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "u7DzKmbQsC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#0b1217\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#0b1217\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>DexTools: Empowering Traders with Advanced Analytics in Decentralized Exchanges</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://dext-tools.github.io/\" class=\"text-primary\"><b>DexTools</b></a> is a powerful platform that revolutionizes the way traders analyze and navigate decentralized exchanges (DEXs). In this article, we will explore the features, benefits, and impact of <a href=\"https://www.dextools.io/app/en/pairs\" class=\"text-primary\"><b>DexTools</b></a> in the realm of decentralized finance (DeFi). We will delve into its core functionalities, advanced analytics tools, and how it empowers traders to make informed decisions in a rapidly evolving decentralized marketplace.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>I. Understanding DexTools:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1.1. Decentralized Exchanges (DEXs):<br><br>Decentralized exchanges are platforms that facilitate peer-to-peer trading of cryptocurrencies without the need for intermediaries. DexTools is specifically designed to support traders who utilize DEXs, providing them with comprehensive tools and insights to navigate the decentralized marketplace effectively.<br><br>1.2. Key Features of DexTools:<br>DexTools offers a range of features that empower traders with advanced analytics and real-time data. Some of the key features include:<br><br>a) Real-Time Data and Charting: DexTools provides traders with real-time data and charting tools, allowing them to monitor and analyze price movements, liquidity, order book depth, and trading volume across multiple DEXs. This information enables traders to make data-driven decisions and identify profitable trading opportunities.<br><br>b) Liquidity Analysis: DexTools offers liquidity analysis tools that help traders assess the depth and quality of liquidity in different trading pairs. By understanding the liquidity landscape, traders can make informed decisions about their trades, avoiding slippage and maximizing their trading strategies.<br><br>c) Trading Insights and Signals: DexTools provides traders with valuable trading insights and signals based on historical data and market trends. These insights help traders identify potential entry and exit points, manage risk, and optimize their trading strategies.<br><br>d) Portfolio Tracking: DexTools allows traders to track their portfolios across various DEXs and wallets. By aggregating data from multiple sources, traders can conveniently monitor their holdings, track their performance, and gain a holistic view of their crypto investments.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>II. Benefits of Using DexTools:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">2.1. Enhanced Trading Analysis:<br>DexTools equips traders with powerful analytics tools that enable them to conduct in-depth analysis of the decentralized marketplace. The real-time data, charting capabilities, and liquidity analysis tools empower traders to make informed decisions, identify trends, and execute trades with precision.<br><br>2.2. Improved Trading Efficiency:<br>By providing traders with consolidated data from multiple DEXs, DexTools streamlines the trading process. Traders no longer need to switch between different platforms to gather information; they can access comprehensive data and insights in one place. This efficiency saves time, reduces friction, and enhances the overall trading experience.<br><br>2.3. Risk Management:<br>DexTools helps traders manage risk effectively by providing insights into liquidity and market trends. Traders can assess the depth of liquidity, identify potential slippage risks, and adjust their trading strategies accordingly. Additionally, the portfolio tracking feature allows traders to monitor their holdings and make well-informed decisions to mitigate risk.<br><br>2.4. Maximizing Trading Opportunities:<br>With DexTools, traders can spot and capitalize on trading opportunities in the decentralized marketplace. The platform's real-time data and trading insights enable traders to identify potential price disparities, arbitrage opportunities, and emerging trends. By leveraging this information, traders can maximize their profitability and stay ahead of the market.<br><br>2.5. Empowering Traders of All Levels:<br>DexTools caters to traders of all levels, from beginners to experienced professionals. The platform's user-friendly interface and comprehensive tools make it accessible to traders with varying levels of expertise. DexTools empowers traders to gain a deeper understanding of the decentralized marketplace and execute trades confidently.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>III. Impact of DexTools:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">3.1. Democratizing DeFi Trading:<br>DexTools plays a pivotal role in democratizing DeFi trading by providing traders with access to advanced analytics and real-time data. The platform levels the playing field, allowing traders of all sizes to make informed decisions and compete effectively in the decentralized marketplace.<br><br>3.2. Fostering Transparency:<br>DexTools promotes transparency in the decentralized marketplace by providing real-time data and insights. Traders can analyze trading pairs, liquidity, and market trends, enabling them to make informed decisions based on accurate and up-to-date information. This transparency builds trust and confidence among traders and contributes to the overall integrity of the DeFi ecosystem.<br><br>3.3. Driving Innovation:<br>DexTools stimulates innovation within the DeFi space. By providing traders with sophisticated analytics tools, the platform encourages the development of new trading strategies, algorithms, and approaches. Traders can experiment, refine their techniques, and contribute to the continuous growth and evolution of decentralized finance.<br><br>3.4. Improving User Experience:<br>DexTools enhances the user experience of trading on DEXs. The platform's intuitive interface, real-time data, and comprehensive tools simplify the trading process, making it more accessible and user-friendly. This improved experience attracts new traders to the decentralized marketplace and facilitates the wider adoption of DeFi.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">DexTools is a game-changer for traders in the decentralized finance space. By providing advanced analytics, real-time data, and powerful tools, DexTools empowers traders to make informed decisions, maximize trading opportunities, and manage risks effectively. The platform's impact extends beyond individual traders, fostering transparency, driving innovation, and improving the overall user experience in the decentralized marketplace. As DexTools continues to evolve and expand its capabilities, it plays a crucial role in propelling the adoption and growth of decentralized exchanges and decentralized finance as a whole.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "u7DzKBBkL9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
