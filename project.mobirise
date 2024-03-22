@@ -38,14 +38,20 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "5.9.13",
-    "siteFonts": [],
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
     "favicon": "@PROJECT_PATH@/assets/images/dextools_1.png",
     "sitemapSwitcher": true,
     "siteUrl": "https://dext-tools.github.io/",
     "sitemapSwitcherAuto": "on",
     "robotsSwitcher": true,
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://dext-tools.github.io/sitemap.xml\n\n",
-    "mbrsiteDomain": "mefvwlhgku",
+    "mbrsiteDomain": "lnnciggfrf",
     "imageResize": false,
     "usedWebp": false,
     "cookiesAlert": false,
@@ -57,8 +63,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Dextools™ | Home Official Website",
+        "meta_descr": "DEXTools is a platform for exploring and trading decentralized finance (DeFi) tokens. Academy offers videos, articles and guides on DEXTools features, DeFi basics, crypto trends and more.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
